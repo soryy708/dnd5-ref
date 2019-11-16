@@ -1,19 +1,17 @@
 {
     "name": "dndref",
     "scripts": {
-        "start": "node .",
-        "package": "pkg package.json --target host --output build/bot.exe --options --max-stack-size=2048"
+        "start": "node ."
     },
     "dependencies": {
         "discord.io": "github:woor/discord.io#gateway_v6",
         "dnd5-srd": "^1.0.0",
+        "dotenv": "^8.2.0",
         "winston": "^3.2.1"
     },
     "devDependencies": {
         "eslint": "^6.6.0",
-        "eslint-plugin-import": "^2.18.2",
-        "pkg": "^4.4.0"
+        "eslint-plugin-import": "^2.18.2"
     },
-    "bin": "index.js",
-    "pkg": {}
+    "bin": "index.js"
 }

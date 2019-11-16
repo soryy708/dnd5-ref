@@ -1,5 +1,6 @@
+require('dotenv').config();
+
 const Discord = require('discord.io');
-const secrets = require('./secrets.json');
 const commands = require('./commands');
 const logUtil = require('./util/log');
 
@@ -9,7 +10,7 @@ function getCommandId() {
 }
 
 const bot = new Discord.Client({
-    token: secrets.token,
+    token: process.env.DISCORD_TOKEN,
     autorun: true
 });
 

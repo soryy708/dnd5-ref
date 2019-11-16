@@ -23,8 +23,7 @@ This [Discord](https://discordapp.com/) bot allows you to query the Dungeons & D
 * Run `npm run package` to make an `.exe` file out of the bot.
 
 ### Initialization
-1. Create a `secrets.json` file.
-2. [Create a Discord application](https://discordapp.com/developers/applications/)
-3. Get a token and a client ID
-4. Place the token in `secrets.json` as `"token"`
-5. Navigate to `https://discordapp.com/oauth2/authorize?&client_id=YOUR_CLIENT_ID&scope=bot&permissions=8` (replace `YOUR_CLIENT_ID` with the client ID of the Discord application)
+1. [Create a Discord application](https://discordapp.com/developers/applications/)
+2. Get a token and a client ID
+3. Place the token in your environment variables as `DISCORD_TOKEN`
+4. Navigate to `https://discordapp.com/oauth2/authorize?&client_id=YOUR_CLIENT_ID&scope=bot&permissions=8` (replace `YOUR_CLIENT_ID` with the client ID of the Discord application)
