@@ -7,7 +7,6 @@ const logger = winston.createLogger({
         winston.format.timestamp(),
     ),
     transports: [
-        new winston.transports.File({filename: 'log.txt'}),
         new winston.transports.Console({format: winston.format.simple()}),
     ],
 });
